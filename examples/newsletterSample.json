@@ -1,0 +1,30 @@
+{
+  "PageTitle": "HTML page title",
+  "PageContent": {
+    "Header": "Newsletter header",
+    "Date": "Date to send newsletter",
+    "Description": "Brief description of newsletter",
+    "AchievementsTitle": "Title for achievements section",
+    "Achievements": [
+      {
+        "AchievementImage": "Image name for achievement #1 - same name as image in static/assets/images folder",
+        "AchievementTitle": "Title for achievement #1",
+        "AchievementDescription": "Brief description of achievement #1",
+        "AchievementButtonText": "Text for button under achievement #1"
+      }
+    ],
+    "LatestUpdatesTitle": "Title for latest updates section",
+    "LatestBlogs": [
+      {
+        "LatestBlogImage": "Image name for latest blog #1 - same name as image in static/assets/images folder",
+        "LatestBlogTitle": "Title for latest blog #1",
+        "LatestBlogDate": "Date for latest blog #1",
+        "LatestBlogDescription": "Brief description of latest blog #1"
+      }
+    ],
+    "LatestButtonTitle": "Text for button under latest updates section",
+    "SenderName": "Name of sender of the newsletter",
+    "SenderOccupation": "Occupation of sender",
+    "CurrentYear": "Current year"
+  }
+}
