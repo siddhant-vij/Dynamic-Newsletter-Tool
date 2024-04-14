@@ -1,0 +1,28 @@
+{{define "latest"}}
+<div class="latest">
+
+  <h2 class="section-title">
+    {{.LatestUpdatesTitle}}
+  </h2>
+
+  {{range .LatestBlogs}}
+    <div class="latest-blog">
+      <div class="latest-blog-image">
+        <img src="../static/assets/images/{{.LatestBlogImage}}" alt="Blog Image">
+      </div>
+      <div class="latest-blog-content">
+        <h3 class="latest-blog-title">{{.LatestBlogTitle}}</h3>
+        <p class="latest-blog-date">{{.LatestBlogDate}}</p>
+        <p class="latest-blog-description">{{.LatestBlogDescription}}</p>
+      </div>
+    </div>
+  {{end}}
+
+  <div class="button">
+    <a href="#">
+      <button class="btn">{{.LatestButtonTitle}}</button>
+    </a>
+  </div>
+
+</div>
+{{end}}

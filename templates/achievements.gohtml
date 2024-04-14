@@ -1,0 +1,30 @@
+{{ define "achievements" }}
+<div class="achievements">
+  <h2 class="section-title">
+    {{.AchievementsTitle}}
+  </h2>
+
+  <div class="achievement-cards">
+
+    {{ range .Achievements }}
+    <div class="card">
+      <div class="card-image">
+        <img src="../static/assets/images/{{.AchievementImage}}" alt="Achievement Image">
+      </div>
+      <div class="card-title">
+        <h3>{{.AchievementTitle}}</h3>
+      </div>
+      <div class="card-description">
+        <p>{{.AchievementDescription}}</p>
+      </div>
+      <div class="button">
+        <a href="#">
+          <button class="btn">{{.AchievementButtonText}}</button>
+        </a>
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

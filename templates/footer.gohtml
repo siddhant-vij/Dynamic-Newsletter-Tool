@@ -1,0 +1,63 @@
+{{define "footer"}}
+<footer>
+  <div class="footer-top">
+    <div class="sender-image">
+      <img src="../static/assets/images/sender.png">
+    </div>
+    <div class="sender-content">
+      <p class="sender-contact">If you have any questions, please <br> contact me directly via phone or email. </p>
+      <p class="sender-greetings">Sincerely,</p>
+      <p class="sender-name">{{.SenderName}}</p>
+      <p class="sender-occupation">{{.SenderOccupation}}</p>
+    </div>
+  </div>
+
+  <div class="footer-mid">
+    <p class="email-helpful">Was this email helpful to you?</p>
+    <div class="emojis">
+      <a href="#">
+        <div class="emoji-good">
+          <img src="../static/assets/icons/emojis/good.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="emoji-neutral">
+          <img src="../static/assets/icons/emojis/neutral.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="emoji-bad">
+          <img src="../static/assets/icons/emojis/bad.png">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="sm-logos">
+      <a href="#">
+        <div class="sm-logo-fb">
+          <img src="../static/assets/icons/facebook-logo-black.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="sm-logo-twt">
+          <img src="../static/assets/icons/twitter-logo-black.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="sm-logo-ig">
+          <img src="../static/assets/icons/instagram-logo-black.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="sm-logo-yt">
+          <img src="../static/assets/icons/youtube-logo-black.png">
+        </div>
+      </a>
+    </div>
+    <p class="unsubscribe">If you prefer not to receive these emails, you can <a href="#">unsubscribe</a>.</p>
+    <p class="copyright">Copyright © {{.CurrentYear}}. All rights reserved.</p>
+  </div>
+</footer>
+{{end}}

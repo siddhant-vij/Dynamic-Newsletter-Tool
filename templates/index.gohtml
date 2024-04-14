@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" href="../static/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="../static/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../static/assets/images/favicon/favicon-64x64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="../static/assets/images/favicon/android-chrome-192x192.png" sizes="192x192">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="../static/reset.css">
+  <link rel="stylesheet" href="../static/styles.css">
+  <title>{{.PageTitle}}</title>
+</head>
+
+<body>
+
+  {{template "header" .PageContent}}
+
+  <div class="boundary">
+  </div>
+
+  {{template "latest" .PageContent}}
+
+  <div class="boundary">
+  </div>
+
+  {{template "achievements" .PageContent}}
+
+  <div class="boundary">
+  </div>
+
+  {{template "footer" .PageContent}}
+
+</body>
+
+</html>
