@@ -36,5 +36,5 @@ go.work
 *.vsix
 
 # Project Specific
-user.json
+newsletter.json
 public/
