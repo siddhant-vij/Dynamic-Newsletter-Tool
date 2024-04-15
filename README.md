@@ -1,6 +1,6 @@
 # Dynamic Newsletter Tool
 
-A command-line application built in Go, designed to create customizable and personalized newsletters for various audiences and occasions.
+Built in Go, this tool is designed to create customizable and personalized newsletters for various audiences and occasions.
 
 Utilizing Go's robust templating system, users can select from pre-defined templates, insert dynamic content, and generate newsletters in HTML format ready for distribution. This tool simplifies the creation of rich, personalized communication for businesses, communities, or personal use, leveraging the flexibility and power of Go templates.
 
@@ -23,10 +23,10 @@ Utilizing Go's robust templating system, users can select from pre-defined templ
 
 ## Planned Features
 
-- **Multiple Newsletter Templates**: Choose from a variety of templates for different occasions and audiences.
-- **JSON-Driven Content Customization**: Utilize a simple JSON file (user.json) to specify dynamic content, such as recipient details and personalized messages, streamlining the newsletter customization process.
-- **Conditional Content Inclusion**: Dynamically include or exclude sections based on user data.
-- **Content Formatting**: Use pipelines to format data, ensuring consistency and readability.
+- **Multiple Newsletter Templates**: Choose from a variety of templates for different occasions and audiences. *Add more templates, as needed.*
+- **JSON-Driven Content Customization**: Utilize a simple JSON file (newsletter.json) to specify dynamic content, such as personalized messages, streamlining the newsletter customization process.
+- **Conditional Content Inclusion**: Dynamically include or exclude sections based on user data. *Add sections based on conditions, as needed.*
+- **Content Formatting**: Use pipelines to format data, ensuring consistency and readability. *Change CSS styles as needed - include variables.*
 - **Reusable Components**: Utilize associated templates for common elements like headers and footers.
 - **Custom Functions in Templates**: Implement custom logic within templates for unique content transformations.
 - **Nested Template Definitions**: Organize complex layouts with ease, allowing for sophisticated newsletter designs.
@@ -40,10 +40,8 @@ Utilizing Go's robust templating system, users can select from pre-defined templ
 
 - Clone the repository: `git clone https://github.com/siddhant-vij/Dynamic-Newsletter-Tool.git`
 - Navigate to the project directory: `cd Dynamic-Newsletter-Tool`
-- Build the Project: `go build -o newsletter-tool main.go`
-- Prepare the JSON fie: Create your own `user.json` with the necessary dynamic content. Refer to the `examples/corporate.json` or `examples/community.json` for a template structure.
-- Run the Tool: `./newsletter-tool`
-- Configure the JSON file to select a template, and generate your newsletter.
+- Prepare the JSON fie: Create your own `newsletter.json` with the necessary dynamic content. Refer to the `examples/newsletterSample.json` for a template structure.
+- Run the HTTP server: `./main.sh`
 - Open the generated newsletter in a web browser (localhost URL) to preview.
 
 
