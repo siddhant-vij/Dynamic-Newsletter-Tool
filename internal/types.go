@@ -1,4 +1,4 @@
-package common
+package internal
 
 type DynamicContent struct {
 	PageTitle   string
